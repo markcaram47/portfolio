@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
-import { FiMenu, FiX, FiCode } from 'react-icons/fi'
+import { FiMenu, FiX, FiCode, FiSun, FiMoon } from 'react-icons/fi'
 import './Navbar.css'
 
 const navLinks = [
@@ -14,6 +14,9 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [active, setActive] = useState('home')
+  const [isLight, setIsLight] = useState(() => {
+    return localStorage.getItem('theme') === 'light'
+  })
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,16 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (isLight) {
+      document.documentElement.setAttribute('data-theme', 'light')
+      localStorage.setItem('theme', 'light')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+      localStorage.setItem('theme', 'dark')
+    }
+  }, [isLight])
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
@@ -52,6 +65,17 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Theme Toggle */}
+        <button
+          id="theme-toggle"
+          className="theme-toggle"
+          onClick={() => setIsLight(!isLight)}
+          aria-label="Toggle theme"
+          title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+        >
+          {isLight ? <FiMoon /> : <FiSun />}
+        </button>
 
         {/* CTA */}
         <a

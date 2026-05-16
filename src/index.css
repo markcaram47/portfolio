@@ -9,7 +9,7 @@
 }
 
 :root {
-  /* Color Palette */
+  /* Color Palette — Dark Mode (default) */
   --bg-primary: #050b18;
   --bg-secondary: #0a1628;
   --bg-card: rgba(255, 255, 255, 0.04);
@@ -47,6 +47,33 @@
   --transition-fast: 0.2s ease;
   --transition-med: 0.35s ease;
   --transition-slow: 0.6s ease;
+}
+
+/* ── Light Mode Theme ── */
+[data-theme="light"] {
+  --bg-primary: #f8f9ff;
+  --bg-secondary: #eef0f9;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 1);
+
+  --accent-purple: #7c3aed;
+  --accent-cyan: #0891b2;
+  --accent-pink: #db2777;
+
+  --gradient-main: linear-gradient(135deg, #7c3aed, #0891b2);
+  --gradient-warm: linear-gradient(135deg, #7c3aed, #db2777);
+  --gradient-text: linear-gradient(135deg, #7c3aed, #0891b2);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --border-subtle: rgba(15, 23, 42, 0.1);
+  --border-accent: rgba(124, 58, 237, 0.35);
+
+  --shadow-glow: 0 0 40px rgba(124, 58, 237, 0.15);
+  --shadow-cyan: 0 0 40px rgba(8, 145, 178, 0.15);
+  --shadow-card: 0 8px 32px rgba(15, 23, 42, 0.1);
 }
 
 html {

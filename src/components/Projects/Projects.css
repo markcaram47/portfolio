@@ -87,7 +87,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4),
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.15),
               0 0 30px color-mix(in srgb, var(--project-color) 20%, transparent);
 }
 

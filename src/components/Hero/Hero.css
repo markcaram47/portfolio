@@ -316,6 +316,18 @@
   50% { transform: translateY(-6px); }
 }
 
+/* Light mode overrides */
+[data-theme="light"] .float-badge {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+}
+
+[data-theme="light"] .avatar-container {
+  background: linear-gradient(145deg, #ede9fe, #dbeafe);
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
