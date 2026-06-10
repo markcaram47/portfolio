@@ -63,7 +63,7 @@ export default function Footer() {
               <a href="https://github.com/" target="_blank" rel="noreferrer" className="footer-link">View GitHub</a>
             </li>
             <li>
-              <a href="mailto:janmark@email.com" className="footer-link">Send Email</a>
+              <a href="mailto:markcaram47@icloud.com" className="footer-link">Send Email</a>
             </li>
           </ul>
         </div>
