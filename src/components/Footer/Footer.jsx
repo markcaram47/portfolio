@@ -73,9 +73,6 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>© {year} Jan Mark Caram. All rights reserved.</p>
-          <p className="footer-made">
-            Made with <FiHeart className="heart" /> using React + Vite
-          </p>
         </div>
       </div>
     </footer>
