@@ -4,19 +4,34 @@ import {
   FiExternalLink, FiGithub, FiFolder, FiLoader
 } from 'react-icons/fi'
 import { fetchProjects } from '../../firebase/projectService'
+import { projects as seedProjects } from '../../data/projects'
 import './Projects.css'
 
 export default function Projects() {
   const ref = useScrollAnimation()
   const [activeFilter, setActiveFilter] = useState('All')
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState(seedProjects)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    let isMounted = true
+
     fetchProjects()
-      .then((data) => setProjects(data))
+      .then((data) => {
+        if (isMounted && Array.isArray(data) && data.length > 0) {
+          setProjects(data)
+        }
+      })
       .catch((err) => console.error('Failed to load projects:', err))
-      .finally(() => setLoading(false))
+      .finally(() => {
+        if (isMounted) {
+          setLoading(false)
+        }
+      })
+
+    return () => {
+      isMounted = false
+    }
   }, [])
 
   const filters = ['All', ...new Set(projects.map((p) => p.category))]
