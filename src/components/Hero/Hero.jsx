@@ -126,17 +126,6 @@ export default function Hero() {
                 <img src={avatarImg} alt="Jan Mark" className="avatar-image" />
               </div>
             </div>
-
-            {/* Floating skill badges */}
-            <div className="float-badge float-badge-1">
-              <span>⚛️</span> React
-            </div>
-            <div className="float-badge float-badge-2">
-              <span>🌐</span> Fullstack
-            </div>
-            <div className="float-badge float-badge-3">
-              <span>🎓</span> IT Graduate
-            </div>
           </div>
         </div>
       </div>
