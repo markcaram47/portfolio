@@ -135,22 +135,6 @@
   color: var(--text-muted);
 }
 
-.footer-made {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.heart {
-  color: #ec4899;
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.25); }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .footer-inner {
