@@ -155,7 +155,6 @@ export default function Contact() {
                     id="contact-name"
                     type="text"
                     name="name"
-                    placeholder="Jan Mark Caram"
                     value={formData.name}
                     onChange={handleChange}
                     className={errors.name ? 'error' : ''}
@@ -169,7 +168,6 @@ export default function Contact() {
                     id="contact-email"
                     type="email"
                     name="email"
-                    placeholder="you@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     className={errors.email ? 'error' : ''}
@@ -184,7 +182,6 @@ export default function Contact() {
                   id="contact-subject"
                   type="text"
                   name="subject"
-                  placeholder="Job Opportunity / Collaboration / Hello"
                   value={formData.subject}
                   onChange={handleChange}
                 />
@@ -196,7 +193,6 @@ export default function Contact() {
                   id="contact-message"
                   name="message"
                   rows={5}
-                  placeholder="Tell me about the opportunity or project..."
                   value={formData.message}
                   onChange={handleChange}
                   className={errors.message ? 'error' : ''}
