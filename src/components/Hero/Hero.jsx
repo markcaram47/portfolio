@@ -5,6 +5,7 @@ import {
   FiArrowDown, FiCode, FiServer, FiLayout
 } from 'react-icons/fi'
 import './Hero.css'
+import avatarImg from '../../assets/2x2.PNG'
 
 const roles = [
   'Web Developer',
@@ -109,7 +110,7 @@ export default function Hero() {
             <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer" id="hero-linkedin" aria-label="LinkedIn">
               <FiLinkedin />
             </a>
-            <a href="mailto:janmark@email.com" id="hero-email" aria-label="Email">
+            <a href="mailto:markcaram47@icoud.com" id="hero-email" aria-label="Email">
               <FiMail />
             </a>
           </div>
@@ -122,20 +123,7 @@ export default function Hero() {
             <div className="avatar-ring-2" />
             <div className="avatar-container">
               <div className="avatar-placeholder">
-                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="100" cy="80" r="45" fill="url(#grad1)" />
-                  <ellipse cx="100" cy="175" rx="70" ry="45" fill="url(#grad2)" />
-                  <defs>
-                    <linearGradient id="grad1" x1="55" y1="35" x2="145" y2="125" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#a78bfa" />
-                      <stop offset="1" stopColor="#06b6d4" />
-                    </linearGradient>
-                    <linearGradient id="grad2" x1="30" y1="130" x2="170" y2="200" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#7c3aed" />
-                      <stop offset="1" stopColor="#06b6d4" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img src={avatarImg} alt="Jan Mark" className="avatar-image" />
               </div>
             </div>
 
