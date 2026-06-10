@@ -121,16 +121,16 @@ export default function About() {
                   <span className="timeline-year">2022 – 2026</span>
                   <h4>BS Information Technology</h4>
                   <p>Major in Web &amp; Mobile Development</p>
-                  <p className="timeline-school">Your University Name</p>
+                  <p className="timeline-school">National University - Manila</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot" />
                 <div className="timeline-content">
-                  <span className="timeline-year">2018 – 2022</span>
-                  <h4>Senior High School — ICT Strand</h4>
+                  <span className="timeline-year">2016 – 2022</span>
+                  <h4>High School — ICT Strand</h4>
                   <p>Information and Communications Technology</p>
-                  <p className="timeline-school">Your Senior High School</p>
+                  <p className="timeline-school">Pampanga National High School</p>
                 </div>
               </div>
             </div>
