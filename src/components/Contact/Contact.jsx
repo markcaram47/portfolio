@@ -10,14 +10,14 @@ const contactInfo = [
   {
     icon: <FiMail />,
     label: 'Email',
-    value: 'janmark@email.com',
-    href: 'mailto:janmark@email.com',
+    value: 'markcaram47@icloud.com',
+    href: 'mailto:markcaram47@icloud.com',
     color: '#7c3aed',
   },
   {
     icon: <FiPhone />,
     label: 'Phone',
-    value: '+63 9XX XXX XXXX',
+    value: '+63 976 026 2756',
     href: 'tel:+639XXXXXXXXX',
     color: '#06b6d4',
   },
@@ -33,7 +33,7 @@ const contactInfo = [
 const socials = [
   { icon: <FiGithub />, label: 'GitHub', href: 'https://github.com/', id: 'contact-github' },
   { icon: <FiLinkedin />, label: 'LinkedIn', href: 'https://linkedin.com/in/', id: 'contact-linkedin' },
-  { icon: <FiMail />, label: 'Email', href: 'mailto:janmark@email.com', id: 'contact-email' },
+  { icon: <FiMail />, label: 'Email', href: 'mailto:markcaram47@icloud.com', id: 'contact-email' },
 ]
 
 export default function Contact() {
